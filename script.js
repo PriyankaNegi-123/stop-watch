@@ -16,11 +16,11 @@ function timer(){
 }
 
 function start(){
-    if(counter==null){
-        interval = setInterval(timer, 1000);
+    if(counter!=null){
+        clearInterval(interval);
     }
     else{
-        clearInterval(interval);
+        interval = setInterval(timer, 1000);
     }
 }
 
